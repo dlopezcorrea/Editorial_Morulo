@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Heart } from "lucide-react";
-import heroImg from "@/assets/hero-illustration.jpg";
+import heroImg from "@/assets/hero-illustration.png";
 
 const Index = () => (
   <div>
