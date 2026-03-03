@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingCart } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logoMorulo from "@/assets/logo-morulo.png";
 
 const navItems = [
   { label: "Inicio", path: "/" },
@@ -18,8 +19,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <Link to="/" className="font-display text-2xl font-black tracking-wide text-primary">
-          MORULO
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logoMorulo} alt="MORULO Editorial" className="h-10 w-10 rounded-sm" />
+          <span className="font-display text-2xl font-black tracking-wide text-primary">MORULO</span>
         </Link>
 
         {/* Desktop nav */}

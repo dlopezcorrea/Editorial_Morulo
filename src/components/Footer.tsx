@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
+import logoMorulo from "@/assets/logo-morulo.png";
 
 const Footer = () => (
   <footer className="bg-foreground text-background py-12">
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="font-display text-2xl font-black mb-3">MORULO</h3>
+          <div className="flex items-center gap-3 mb-3">
+            <img src={logoMorulo} alt="MORULO" className="h-10 w-10 rounded-sm" />
+            <h3 className="font-display text-2xl font-black">MORULO</h3>
+          </div>
           <p className="text-background/70 text-sm leading-relaxed">
             Editorial independiente de libros infantiles. Un proyecto creativo de madre e hija desde Cali, Colombia.
           </p>
