@@ -8,7 +8,7 @@ const Index = () => (
     {/* Hero */}
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Ilustración de un niño leyendo rodeado de plantas tropicales y pájaros coloridos" className="w-full h-full object-cover" />
+        <img src={heroImg} alt="Ilustración de una niña leyendo rodeada de plantas y flores coloridas" className="w-full h-full object-cover object-right md:object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       </div>
       <div className="container mx-auto px-6 relative z-10 py-32">
