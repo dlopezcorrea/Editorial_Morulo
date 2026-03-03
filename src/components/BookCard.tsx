@@ -35,8 +35,8 @@ const BookCard = ({ title, price, description, specs, isNew, colorIndex, image }
     )}
 
     {image && (
-      <div className="w-full aspect-square rounded-xl overflow-hidden mb-2">
-        <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+      <div className="w-full aspect-square rounded-xl overflow-hidden mb-2 bg-blush flex items-center justify-center p-4">
+        <img src={image} alt={title} className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300 rounded-lg shadow-md" />
       </div>
     )}
 
