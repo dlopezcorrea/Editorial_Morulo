@@ -1,50 +1,57 @@
 import { motion } from "framer-motion";
+import { MapPin } from "lucide-react";
 import BookCard from "@/components/BookCard";
+import bookJuega from "@/assets/book-juega-celebra.jpg";
+import bookPreguntale from "@/assets/book-preguntale-viento.jpg";
+import bookPinulo from "@/assets/book-pinulo-cocina.jpg";
+import bookCuentos from "@/assets/book-cuentos-cortos.jpg";
+import bookDanza from "@/assets/book-danza-adivinanza.jpg";
+import bookJirebras from "@/assets/book-jirebras.jpg";
 
 const books = [
   {
-    title: "Jirebras: Adivinanzas, Retahílas y Trabalenguas",
-    price: "$20,000 – $45,000",
-    formats: "Libro digital y físico",
-    description: "¡Sumérgete en el mundo de las palabras con Jirebras! Diversión y aprendizaje en un solo libro. Despierta la creatividad en toda la familia con juegos de palabras y acertijos. Seleccionado por el Ministerio de Cultura, la Biblioteca Nacional y Fundalectura para la impresión de 2.000 ejemplares para la Red de Bibliotecas Públicas del País.",
-    specs: "Formato e-book · 10 cuentos con ilustraciones",
-  },
-  {
-    title: "Piñulo Cocina",
-    price: "$20,000 – $45,000",
-    formats: "Libro digital y físico",
-    description: "¡Descubre el mundo de la cocina del Pacífico con Piñulo Cocina! 33 recetas ilustradas para niños y niñas con adivinanzas, poemas y trabalenguas. Convierte la cocina en un espacio creativo y amoroso, explorando sabores, ingredientes y tradiciones culinarias.",
-    specs: "Formato e-book · 33 recetas ilustradas",
-  },
-  {
-    title: "Cuentos Cortos, Aventuras Grandes",
-    price: "$20,000 – $35,000",
-    formats: "Libro digital y físico",
-    description: "¡Descubre la magia de Cuentos Cortos, Aventuras Grandes! Diez cuentos ilustrados con personajes sorprendentes que invitan a trabajar valores como la amistad, la solidaridad, la resiliencia y el amor propio. Ganador del Estímulo de la Secretaría de Cultura.",
-    specs: "Formato e-book · 10 cuentos con ilustraciones",
-  },
-  {
-    title: "Danza Adivinanza",
-    price: "$20,000 – $45,000",
-    formats: "Libro digital y físico",
-    description: "¡Descubre la magia de las adivinanzas con Danza Adivinanza! 86 adivinanzas para todas las edades con coloridas ilustraciones para jugar en compañía y unir a las familias en torno al lenguaje.",
-    specs: "Formato e-book · 86 adivinanzas",
-  },
-  {
     title: "Juega y Celebra con Las Jirebras",
-    price: "Por definir",
-    formats: "Libro físico",
-    description: "Un libro en el que encontrarás historias y canciones que te llevarán a lugares mágicos, adivinanzas que pondrán a prueba tu ingenio, así como retahílas y trabalenguas que te harán pensar, reír y compartir.",
-    specs: "Pasta blanda · 20 cm x 20 cm · 55 páginas · ISBN: 978-628-96539-1-5 · Bogotá, octubre 2024",
+    price: "$55.000",
+    description: "Un libro en el que encontrarás historias y canciones que te llevarán a lugares mágicos, adivinanzas que pondrán a prueba tu ingenio, así como retahílas y trabalenguas que te harán pensar, reír y compartir. Ganador de la Beca de Creación Artística del Ministerio de las Culturas, 2024.",
+    specs: "Pasta blanda · 20cm x 20cm · 55 páginas · ISBN: 978-628-96539-1-5",
     isNew: true,
+    image: bookJuega,
   },
   {
     title: "Pregúntale al Viento",
-    price: "Por definir",
-    formats: "Libro físico",
-    description: "Un viaje poético en el que cada verso es una respuesta a las inquietudes que surgen del entorno y la contemplación. Ganador de la Beca de Creación Artística — Ministerio de las Culturas, las Artes y los Saberes, 2024.",
-    specs: "Libro ilustrado con collages · Autora: María Mercedes Echeverri · Ilustradora: Silvia Arango Echeverri",
+    price: "$65.000",
+    description: "Un viaje poético en el que cada verso es una respuesta a las inquietudes que surgen del entorno y la contemplación. Ganador de la Beca de Creación Artística del Ministerio de las Culturas, 2024.",
+    specs: "Pasta blanda · 20cm x 20cm · 57 páginas · ISBN: 978-628-96539-0-8",
     isNew: true,
+    image: bookPreguntale,
+  },
+  {
+    title: "Piñulo Cocina",
+    price: "$45.000",
+    description: "Descubre el mundo de la cocina colombiana y del Pacífico con 33 recetas ilustradas para niños y niñas acompañadas de adivinanzas, poemas y trabalenguas. Convierte la cocina en un espacio creativo y amoroso.",
+    specs: "Pasta blanda · 20cm x 20cm · 89 páginas · ISBN: 978-958-5479-68-5",
+    image: bookPinulo,
+  },
+  {
+    title: "Cuentos Cortos, Aventuras Grandes",
+    price: "$55.000",
+    description: "Diez cuentos ilustrados con personajes sorprendentes que recrean valores como la amistad, la solidaridad, la resiliencia y el amor propio. Ganador del Estímulo de la Secretaría de Cultura de Cali, 2022.",
+    specs: "Pasta blanda · 20cm x 20cm · 48 páginas · ISBN: 978-958-5479-74-6",
+    image: bookCuentos,
+  },
+  {
+    title: "Danza Adivinanza",
+    price: "$55.000",
+    description: "86 adivinanzas poéticas para todas las edades, con coloridas ilustraciones para jugar en compañía y unir a las familias en torno al lenguaje.",
+    specs: "Pasta blanda · 20cm x 20cm · 72 páginas · ISBN: 978-958-5479-69-2",
+    image: bookDanza,
+  },
+  {
+    title: "Jirebras: Adivinanzas, Retahílas y Trabalenguas",
+    price: "$55.000",
+    description: "¡Sumérgete en el mundo de las palabras! Diversión y aprendizaje en un solo libro. Seleccionado por el Ministerio de Cultura, la Biblioteca Nacional y Fundalectura para el Plan Nacional de Lectura y Escritura, 2022.",
+    specs: "Pasta blanda · 20cm x 20cm · 68 páginas · ISBN: 978-958-5479-23-4",
+    image: bookJirebras,
   },
 ];
 
@@ -69,6 +76,19 @@ const Catalogo = () => (
             <BookCard key={book.title} {...book} colorIndex={i} />
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-16 text-center bg-blush rounded-2xl p-8 max-w-2xl mx-auto"
+        >
+          <MapPin className="mx-auto text-primary mb-3" size={28} />
+          <p className="text-lg font-display font-bold text-foreground">
+            Puedes encontrar nuestros libros en todas las librerías del país
+          </p>
+        </motion.div>
       </div>
     </section>
   </div>
