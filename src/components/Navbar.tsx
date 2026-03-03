@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logoMorulo from "@/assets/logo-morulo.png";
 
 const navItems = [
   { label: "Inicio", path: "/" },
   { label: "Nosotras", path: "/nosotras" },
-  { label: "Tienda", path: "/tienda" },
+  { label: "Catálogo", path: "/catalogo" },
   { label: "Reconocimientos", path: "/reconocimientos" },
   { label: "Contacto", path: "/contacto" },
 ];
@@ -36,16 +36,10 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          <button className="relative text-foreground/70 hover:text-primary transition-colors" aria-label="Carrito">
-            <ShoppingCart size={20} />
-          </button>
         </div>
 
         {/* Mobile toggle */}
-        <div className="flex items-center gap-4 md:hidden">
-          <button className="text-foreground/70 hover:text-primary transition-colors" aria-label="Carrito">
-            <ShoppingCart size={20} />
-          </button>
+        <div className="flex items-center md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-foreground" aria-label="Menú">
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
