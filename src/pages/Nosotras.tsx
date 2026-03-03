@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Palette } from "lucide-react";
+
 import mariaMercedesImg from "@/assets/maria-mercedes.png";
+import silviaImg from "@/assets/silvia-arango.png";
 
 const Nosotras = () => (
   <div className="pt-24">
@@ -48,8 +49,8 @@ const Nosotras = () => (
             transition={{ duration: 0.6 }}
             className="bg-blush rounded-2xl p-8 text-center"
           >
-            <div className="w-32 h-32 rounded-full bg-accent/20 mx-auto mb-6 flex items-center justify-center">
-              <Palette className="text-accent" size={48} />
+            <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6">
+              <img src={silviaImg} alt="Silvia Arango Echeverri" className="w-full h-full object-cover" />
             </div>
             <h2 className="text-2xl font-display font-bold text-foreground mb-2">Silvia Arango Echeverri</h2>
             <span className="text-sm font-bold text-accent tracking-wider uppercase">Ilustradora</span>
