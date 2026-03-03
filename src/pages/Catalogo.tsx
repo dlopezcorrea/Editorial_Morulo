@@ -14,7 +14,6 @@ const books = [
     price: "$55.000",
     description: "Un libro en el que encontrarás historias y canciones que te llevarán a lugares mágicos, adivinanzas que pondrán a prueba tu ingenio, así como retahílas y trabalenguas que te harán pensar, reír y compartir. Ganador de la Beca de Creación Artística del Ministerio de las Culturas, 2024.",
     specs: "Pasta blanda · 20cm x 20cm · 55 páginas · ISBN: 978-628-96539-1-5",
-    isNew: true,
     image: bookJuega,
   },
   {
@@ -22,7 +21,6 @@ const books = [
     price: "$65.000",
     description: "Un viaje poético en el que cada verso es una respuesta a las inquietudes que surgen del entorno y la contemplación. Ganador de la Beca de Creación Artística del Ministerio de las Culturas, 2024.",
     specs: "Pasta blanda · 20cm x 20cm · 57 páginas · ISBN: 978-628-96539-0-8",
-    isNew: true,
     image: bookPreguntale,
   },
   {
