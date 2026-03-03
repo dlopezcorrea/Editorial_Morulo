@@ -48,7 +48,7 @@ const books = [
   },
 ];
 
-const Tienda = () => (
+const Catalogo = () => (
   <div className="pt-24">
     <section className="py-20">
       <div className="container mx-auto px-6">
@@ -58,7 +58,7 @@ const Tienda = () => (
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-display font-black text-foreground mb-4">Tienda</h1>
+          <h1 className="text-4xl md:text-5xl font-display font-black text-foreground mb-4">Catálogo</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Descubre nuestra colección de libros infantiles llenos de creatividad, color y amor por las palabras.
           </p>
@@ -74,4 +74,4 @@ const Tienda = () => (
   </div>
 );
 
-export default Tienda;
+export default Catalogo;

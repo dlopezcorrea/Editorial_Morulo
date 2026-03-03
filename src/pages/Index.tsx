@@ -25,7 +25,7 @@ const Index = () => (
             Libros que despiertan la imaginación de toda la familia
           </p>
           <Link
-            to="/tienda"
+            to="/catalogo"
             className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-sm tracking-wide hover:bg-primary/90 transition-all hover:gap-4"
           >
             Conoce nuestros libros <ArrowRight size={18} />

@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Index from "./pages/Index";
 import Nosotras from "./pages/Nosotras";
-import Tienda from "./pages/Tienda";
+import Catalogo from "./pages/Catalogo";
 import Reconocimientos from "./pages/Reconocimientos";
 import Contacto from "./pages/Contacto";
 import NotFound from "./pages/NotFound";
@@ -25,7 +25,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/nosotras" element={<Nosotras />} />
-            <Route path="/tienda" element={<Tienda />} />
+            <Route path="/catalogo" element={<Catalogo />} />
             <Route path="/reconocimientos" element={<Reconocimientos />} />
             <Route path="/contacto" element={<Contacto />} />
             <Route path="*" element={<NotFound />} />
