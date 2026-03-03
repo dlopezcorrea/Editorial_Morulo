@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { PenTool, Palette } from "lucide-react";
+import { Palette } from "lucide-react";
+import mariaMercedesImg from "@/assets/maria-mercedes.png";
 
 const Nosotras = () => (
   <div className="pt-24">
@@ -27,8 +28,8 @@ const Nosotras = () => (
             transition={{ duration: 0.6 }}
             className="bg-blush rounded-2xl p-8 text-center"
           >
-            <div className="w-32 h-32 rounded-full bg-coral/20 mx-auto mb-6 flex items-center justify-center">
-              <PenTool className="text-coral" size={48} />
+            <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6">
+              <img src={mariaMercedesImg} alt="María Mercedes Echeverri" className="w-full h-full object-cover" />
             </div>
             <h2 className="text-2xl font-display font-bold text-foreground mb-2">María Mercedes Echeverri</h2>
             <span className="text-sm font-bold text-coral tracking-wider uppercase">Escritora</span>
