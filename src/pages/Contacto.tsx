@@ -91,7 +91,7 @@ const Contacto = () => {
                 <MapPin className="text-primary" size={20} /> Cali, Colombia
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Mail className="text-primary" size={20} /> <Mail className="text-primary" size={20} /> contact@morulo.com
+                <Mail className="text-primary" size={20} /> contact@morulo.com
               </div>
               <div className="flex gap-4 mt-4">
                 <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
