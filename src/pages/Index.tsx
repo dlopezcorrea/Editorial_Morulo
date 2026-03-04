@@ -22,7 +22,7 @@ const Index = () => (
             MORULO
           </h1>
           <p className="text-xl md:text-2xl font-body text-foreground/80 mb-8 leading-relaxed">
-            Libros que despiertan la imaginación de toda la familia
+            Diviértete con los juegos de palabras. Editorial independiente de libros infantiles.
           </p>
           <Link
             to="/catalogo"
