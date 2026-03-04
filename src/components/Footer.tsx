@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import logoMorulo from "@/assets/logo-morulo.png";
 
 const Footer = () => (
@@ -36,10 +36,6 @@ const Footer = () => (
           <div className="flex flex-col gap-3 text-sm text-background/70">
             <span className="flex items-center gap-2"><MapPin size={16} /> Cali, Colombia</span>
             <span className="flex items-center gap-2"><Mail size={16} /> contact@morulo.com</span>
-          </div>
-          <div className="flex gap-4 mt-4">
-            <a href="#" className="text-background/60 hover:text-background transition-colors" aria-label="Instagram"><Instagram size={20} /></a>
-            <a href="#" className="text-background/60 hover:text-background transition-colors" aria-label="Facebook"><Facebook size={20} /></a>
           </div>
         </div>
       </div>
