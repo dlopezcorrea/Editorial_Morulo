@@ -3,33 +3,39 @@ import { Award, Star } from "lucide-react";
 
 const awards = [
   {
-    title: "Estímulo para la Circulación Internacional",
-    description: "Bibliotecas públicas de Barcelona y Luces",
-    year: "2023",
-    icon: Star,
-  },
-  {
-    title: "Estímulo para la Creación de Libros con Contenido para la Primera Infancia",
-    description: "Reconocimiento a la creación de contenido literario infantil de alta calidad",
-    year: "2022",
-    icon: Award,
-  },
-  {
-    title: "Colecciones Bibliotecas Públicas",
-    description: "Selección para las colecciones de las bibliotecas públicas del país",
-    year: "2022",
-    icon: Star,
-  },
-  {
     title: "Beca de Creación Artística — Modalidad Literatura",
     description: "Programa Nacional de Estímulos del Ministerio de las Culturas, las Artes y los Saberes",
     year: "2024",
     icon: Award,
   },
+  {
+    title: "Estímulo, Circulación Internacional",
+    description: "Difusión de la obra de Las Jirebras en Lisboa y Barcelona. ARTES LITERARIAS - Literatura infantil e ilustración – Circulación Internacional, Ventanilla Abierta. Secretaría de Cultura de Cali.",
+    year: "2023",
+    icon: Star,
+  },
+  {
+    title: "Estímulo, Beca: Desarrollo de Estrategias de Comercialización",
+    description: "Desarrollo de estrategias de comercialización para las artes y la cultura. ARTES LITERARIAS - Literatura infantil e ilustración. Ministerio de Cultura.",
+    year: "2023",
+    icon: Award,
+  },
+  {
+    title: "Estímulo para la Creación de Libros con Contenido para la Primera Infancia",
+    description: "Reconocimiento a la creación de contenido literario infantil de alta calidad",
+    year: "2022",
+    icon: Star,
+  },
+  {
+    title: "Colecciones Bibliotecas Públicas",
+    description: "Selección para las colecciones de las bibliotecas públicas del país",
+    year: "2022",
+    icon: Award,
+  },
 ];
 
-const bgColors = ["bg-primary/10", "bg-coral/10", "bg-accent/10", "bg-soft-pink/20"];
-const iconBg = ["bg-primary", "bg-coral", "bg-accent", "bg-soft-pink"];
+const bgColors = ["bg-primary/10", "bg-coral/10", "bg-accent/10", "bg-soft-pink/20", "bg-primary/10", "bg-coral/10"];
+const iconBg = ["bg-primary", "bg-coral", "bg-accent", "bg-soft-pink", "bg-primary", "bg-coral"];
 
 const Reconocimientos = () => (
   <div className="pt-24">
@@ -57,9 +63,9 @@ const Reconocimientos = () => (
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className={`rounded-2xl ${bgColors[i]} p-8 text-center`}
+                className={`rounded-2xl ${bgColors[i % bgColors.length]} p-8 text-center`}
               >
-                <div className={`w-16 h-16 rounded-full ${iconBg[i]} mx-auto mb-4 flex items-center justify-center`}>
+                <div className={`w-16 h-16 rounded-full ${iconBg[i % iconBg.length]} mx-auto mb-4 flex items-center justify-center`}>
                   <Icon className="text-primary-foreground" size={28} />
                 </div>
                 <span className="text-sm font-bold text-muted-foreground tracking-wider">{award.year}</span>
