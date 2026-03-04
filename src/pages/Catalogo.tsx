@@ -69,24 +69,24 @@ const Catalogo = () => (
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {books.map((book, i) => (
-            <BookCard key={book.title} {...book} colorIndex={i} />
-          ))}
-        </div>
-
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 text-center bg-blush rounded-2xl p-8 max-w-2xl mx-auto"
+          className="mb-12 text-center bg-blush rounded-2xl p-8 max-w-2xl mx-auto"
         >
           <MapPin className="mx-auto text-primary mb-3" size={28} />
           <p className="text-lg font-display font-bold text-foreground">
             Puedes encontrar nuestros libros en todas las librerías del país
           </p>
         </motion.div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {books.map((book, i) => (
+            <BookCard key={book.title} {...book} colorIndex={i} />
+          ))}
+        </div>
       </div>
     </section>
   </div>
