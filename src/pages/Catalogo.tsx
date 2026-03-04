@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import BookCard from "@/components/BookCard";
-import bookJuega from "@/assets/book-juega-celebra.jpg";
-import bookPreguntale from "@/assets/book-preguntale-viento.jpg";
-import bookPinulo from "@/assets/book-pinulo-cocina.jpg";
-import bookCuentos from "@/assets/book-cuentos-cortos.jpg";
-import bookDanza from "@/assets/book-danza-adivinanza.jpg";
-import bookJirebras from "@/assets/book-jirebras.jpg";
+import bookJuega from "@/assets/book-juega-celebra.png";
+import bookPreguntale from "@/assets/book-preguntale-viento.png";
+import bookPinulo from "@/assets/book-pinulo-cocina.png";
+import bookCuentos from "@/assets/book-cuentos-cortos.png";
+import bookDanza from "@/assets/book-danza-adivinanza.png";
+import bookJirebras from "@/assets/book-jirebras.png";
 
 const books = [
   {
