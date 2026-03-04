@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Send, MapPin, Mail, Instagram, Facebook } from "lucide-react";
+import { Send, MapPin, Mail } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contacto = () => {
@@ -92,14 +92,6 @@ const Contacto = () => {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="text-primary" size={20} /> contact@morulo.com
-              </div>
-              <div className="flex gap-4 mt-4">
-                <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Instagram">
-                  <Instagram size={22} />
-                </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors" aria-label="Facebook">
-                  <Facebook size={22} />
-                </a>
               </div>
             </motion.div>
           </div>
