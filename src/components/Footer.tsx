@@ -35,7 +35,7 @@ const Footer = () => (
           <h4 className="font-bold text-sm tracking-[0.15em] uppercase mb-4">Contacto</h4>
           <div className="flex flex-col gap-3 text-sm text-background/70">
             <span className="flex items-center gap-2"><MapPin size={16} /> Cali, Colombia</span>
-            <span className="flex items-center gap-2"><Mail size={16} /> hola@morulo.co</span>
+            <span className="flex items-center gap-2"><Mail size={16} /> <span className="flex items-center gap-2"><Mail size={16} /> contact@morulo.com</span></span>
           </div>
           <div className="flex gap-4 mt-4">
             <a href="#" className="text-background/60 hover:text-background transition-colors" aria-label="Instagram"><Instagram size={20} /></a>
